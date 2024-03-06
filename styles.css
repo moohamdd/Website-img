@@ -1,0 +1,138 @@
+/* Resetting default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+header {
+  background: #333;
+  color: #fff;
+  padding: 1rem;
+}
+
+nav ul {
+  list-style-type: none;
+  text-align: center;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.hero {
+  background: #f4f4f4;
+  padding: 2rem;
+  text-align: center;
+}
+
+.btn {
+  display: inline-block;
+  background: #333;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+}
+
+
+.slider {
+  display: flex;
+  justify-content: center;
+  /* Center the items horizontally */
+  overflow-x: auto;
+  /* Enable horizontal scrolling */
+  scroll-snap-type: x mandatory;
+  /* Enable mandatory snap points for horizontal scrolling */
+}
+
+.slide {
+  flex: 0 0 auto;
+  /* Prevent resizing of individual slides */
+  scroll-snap-align: start;
+  /* Snap each slide to the start of the container */
+  margin-right: 20px;
+  /* Add some spacing between slides */
+}
+
+.slide img {
+  max-width: 100%;
+  /* Limit the maximum width of the image to its container */
+  height: auto;
+  /* Maintain aspect ratio */
+  border-radius: 5px;
+  /* Add border radius to images */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  /* Add a subtle shadow effect */
+  transition: transform 0.3s ease;
+  /* Add a smooth transition effect on hover */
+}
+
+.slide img:hover {
+  transform: scale(1.1);
+  /* Scale up the image on hover */
+}
+
+
+.slider {
+  /* Add slider styles here */
+}
+
+.services {
+  display: flex;
+  justify-content: space-around;
+  padding: 2rem 0;
+}
+
+.service {
+  text-align: center;
+  flex-basis: 30%;
+}
+
+.counter {
+  /* Add counter styles here */
+}
+
+.about-slider {
+  display: flex;
+  overflow: hidden;
+  width: 100%;
+  max-width: 600px;
+  /* Set max-width of the slider */
+  margin: 0 auto;
+  /* Center the slider */
+}
+
+.about-slider img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.5s ease;
+}
+
+.about-content {
+  padding: 20px;
+}
+
+.about-content h2 {
+  margin-top: 0;
+}
+
+
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+}
